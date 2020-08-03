@@ -1,5 +1,7 @@
 package com.example.controller;
+import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,8 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/hello")
-    public String helloWorld(){
-        return "Hello World";
+    public User helloWorld(){
+        User user=new User();
+        user.setName("TianMing");
+        user.setAge("20");
+        return user;
     }
 
 
