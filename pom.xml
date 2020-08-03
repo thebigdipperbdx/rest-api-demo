@@ -13,6 +13,7 @@
     <groupId>com.example</groupId>
     <artifactId>rest-api-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>rest-api-demo</name>
     <description>Demo project for Spring Boot</description>
 
